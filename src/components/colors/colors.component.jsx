@@ -4,12 +4,10 @@ import { ColorsContainer, ColorsList } from "./colors.styles";
 import data from "../../data/bigdata.json";
 
 export const ColorsComponent = () => {
-  console.log(data.length);
   const dataA = data.slice(0, 316);
   const dataB = data.slice(316, 632);
   const dataC = data.slice(632, data.length - 1);
 
-  console.log(dataA.length, dataB.length, dataC.length);
   const renderItemA = (index, key) => {
     return (
       <ColorComponent
